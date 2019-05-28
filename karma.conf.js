@@ -1,5 +1,6 @@
 // Karma configuration
 // Generated on Tue May 28 2019 13:56:24 GMT-0700 (PDT)
+const webpackConfig = require('./webpack.config.js');
 
 module.exports = function(config) {
   config.set({
@@ -33,6 +34,7 @@ module.exports = function(config) {
       'spec/*spec.js': ['webpack', 'sourcemap']
     },
     plugins: [
+      'karma-sourcemap-loader',
       'karma-jquery',
       'karma-webpack',
       'karma-jasmine',
