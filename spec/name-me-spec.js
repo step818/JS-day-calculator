@@ -1,10 +1,9 @@
-import { functionName } from "../src/location";
+import { findDay } from "../src/weekday-calculator";
 
-describe('functionName', function() {
+describe('findDay', function() {
 
-//test example:
-    // it('should test whether a number is modular of three', function() {
-    // var goal = new pingPong(3);
-    // expect(goal).toEqual([1,2,"ping"]);
+    it('should test whether todays date is Wednesday', function() {
+    var testResult = new findDay(2019, 5, 29);
+    expect(testResult).toEqual("Wednesday");
     });
 });

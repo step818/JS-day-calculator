@@ -8,4 +8,4 @@ export function findDay(year, month, date) {
   let d = (date + y + Math.floor(y/4) - Math.floor(y/100) + Math.floor(y/400) + Math.floor(31 * m / 12)) % 7;
 
   return dict[d];
-};
+}
