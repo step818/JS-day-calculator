@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Weekday Calculator</title>
   </head>
   <body>
-  
+    <h1>Weekday Calculator</h1>
+    <div class="container">
+
+      <form id="day-calc-form">
+        <label for="year">Enter Year</label>
+        <input type="text" name="year" id="year">
+        <label for="month">Enter Month</label>
+        <input type="text" name="month" id="month">
+        <label for="date">Enter Date</label>
+        <input type="text" name="date" id="date">
+
+          <!-- <select id="year" name="year">
+            <option placeholder="select year"></option>
+          </select>
+          <select id="month" name="month">
+            <option placeholder="select month"></option>
+          </select>
+          <select id="date" name="date">
+            <option placeholder="select date"></option>
+          </select> -->
+        <button type="button" name="btn btn-info" id="submitBtn">Submit</button>
+      </form>
+    </div>
+
+    <p>The day of the week for your search is: <span class="result"></span></p>
+
   </body>
 </html>
